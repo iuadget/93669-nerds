@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds</title>
+</head>
+<body>
+<header class="mainHeader">
+  <div class="container">
+     <img class="logo" src="img/logo.jpg" alt="Логотип" width="150" height="60">
+     <nav class="mainNavigation">
+     <ul>
+       <li><a href="#">Студия</a></li>
+       <li><a href="#">Клиенты</a></li>
+       <li><a href="#">Магазин</a></li>
+       <li><a href="#">Контакты</a></li>
+       <li><a href="#">Корзина</a></li>
+      </ul>
+     </nav>
+    <div class="slider">
+      <div class="slides">
+        <div class="slideContent">
+            <h1>Долго, дорого, скрупулезно.</h1>
+            <p>Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.</p>
+            <a class="btn" href="#">Узнать больше</a>
+        </div>
+      </div>
+      <input type="radio" id="btn1" name="toggle" checked>
+      <input type="radio" id="btn2" name="toggle">
+      <input type="radio" id="btn3" name="toggle">
+    </div>
+  </div>
+</header>
+<main class="mainContainer">
+    <div class="features">
+      <section class="featuresItem">
+        <img src="img/pic-1.jpg" alt="Рисунок-1" width="240" height="124">
+        <h2>Веб-сайты</h2>
+        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <a class="btn" href="#">Заказать</a>
+      </section>
+      <section class="featuresItem">
+        <img src="img/pic-2.jpg" alt="Рисунок-2" width="240" height="124">
+        <h2>Приложения</h2>
+        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+        <a class="btn" href="#">Заказать</a>
+      </section>
+      <section class="featuresItem">
+        <img src="img/pic-3.jpg" alt="Рисунок-3" width="240" height="124">
+        <h2>Презентации</h2>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        <a class="btn" href="#">Заказать</a>
+      </section>
+    </div>
+    <div class="description">
+      <section class="columnLeft">
+        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический
+        расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
+      <section class="columnRight">
+        <div class="logoBlock">
+          <img src="img/logo.jpg" alt="Логотип" width="250" height="150">
+        </div>
+        <h3>Как мы работаем:</h3>
+        <ul>
+          <li>С самоотдачей 146%</li>
+          <li>Соблюдая сроки на 100%</li>
+          <li>По предоплате 50%</li>
+        </ul>
+      </section>
+    </div>
+    <div class="partnersBlock">
+      <a class="partner" href="#"><img src="img/partner-1.png" alt="Glukhanko" width="200" height="100"></a>
+      <a class="partner" href="#"><img src="img/partner-2.png" alt="HtmlAcademy" width="200" height="100"></a>
+      <a class="partner" href="#"><img src="img/partner-3.png" alt="Barbershop" width="200" height="100"></a>
+    </div>
+    <div class="map">
+      <section class="mapForm">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn" href="#">Напишите нам</a>
+      </section>
+    </div>
+  </main>
+<footer class="mainFooter">
+  <div class="container">
+    <section class="footerSocial">
+      <a class="socialBtn socialBtnVk" href="#">Вконтакте</a>
+      <a class="socialBtn socialBtnFb" href="#">Фейсбук</a>
+      <a class="socialBtn socialBtnInst" href="#">Инстаграм</a>
+    </section>
+    <section class="features">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </div>
+</footer>
+</body>
 </html>

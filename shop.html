@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerds</title>
+</head>
+<body>
+<header class="mainHeader">
+  <div class="container">
+    <img class="logo" src="img/logo.png" alt="Логотип" width="150" height="60">
+    <nav class="mainNavigation">
+      <ul>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+    <h1>Добро пожаловать в магазин готовых макетов</h1>
+  </div>
+</header>
+<main class="container">
+    <div class="shopColumns">
+      <div class="shopColumnLeft">
+      <form action="/echo" method="post">
+        <h3>Стоимость:</h3>
+        <div class="shopFilter">
+          <div class="inputPrice">
+            от <input class="minPrice" type="text" value="0">
+            до <input class="maxPrice" type="text" value="15 000">
+          </div>
+        </div>
+        <h3>Сетка:</h3>
+        <input type="radio" name="grid" id="adaptive" checked="">
+        <label for="adaptive">Адаптивная</label>
+        <input type="radio" name="grid" id="fixed">
+        <label for="fixed">Фиксированная</label>
+        <input type="radio" name="grid" id="rubber">
+        <label for="rubber">Резиновая</label>
+        <h3>Особенности:</h3>
+        <input type="checkbox" name="slider" id="slider" checked="">
+        <label for="slider">Слайдер</label>
+        <input type="checkbox" name="blockFeatures" id="blockFeatures">
+        <label for="blockFeatures">Блок преимуществ</label>
+        <input type="checkbox" name="news" id="news" checked="">
+        <label for="news">Новости</label><br>
+        <input type="checkbox" name="gallery" id="gallery">
+        <label for="gallery">Галерея</label><br>
+        <input type="checkbox" name="basket" id="basket">
+        <label for="basket">Корзина</label>
+        <input type="submit" name="submitShow" value="Показать">
+      </form>
+    </div>
+      <div class="shopColumnRight">
+      <ul>
+        <li>Сортировать:</li>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По функционалу</a></li>
+        <li><a href="#">Up</a></li>
+        <li><a href="#">Down</a></li>
+      </ul>
+      <div class="catalog">
+        <article class="catalogItem">
+          <div class="changePic">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+          </div>
+          <div class="catalogContent">
+          <figure>
+            <img src="img/220*165.png" width="220" height="165" alt="Товар-1">
+          </figure>
+          <p>AVIATOR</p>
+          </div>
+          </article>
+        <article class="catalogItem">
+            <div class="changePic">
+              <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+              </ul>
+            </div>
+            <div class="catalogContent">
+            <figure>
+              <img src="img/220*165.png" width="220" height="165" alt="Товар-2">
+            </figure>
+            <p>SUNSET</p>
+            </div>
+            </article>
+        <article class="catalogItem">
+            <div class="changePic">
+              <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+              </ul>
+            </div>
+            <div class="catalogContent">
+            <figure>
+              <img src="img/220*165.png" width="220" height="165" alt="Товар-3">
+            </figure>
+            <p>FORTE</p>
+            </div>
+            </article>
+        <article class="catalogItem">
+            <div class="changePic">
+              <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+              </ul>
+            </div>
+            <div class="catalogContent">
+            <figure>
+              <img src="img/220*165.png" width="220" height="165" alt="Товар-4">
+            </figure>
+            <p>Moderh organic thai</p>
+            </div>
+            </article>
+        <article class="catalogItem">
+            <div class="changePic">
+              <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+              </ul>
+            </div>
+            <div class="catalogContent">
+            <figure>
+              <img src="img/220*165.png" width="220" height="165" alt="Товар-5">
+            </figure>
+            <p>Avenue</p>
+            </div>
+        </article>
+        <article class="catalogItem">
+            <div class="changePic">
+              <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+              </ul>
+            </div>
+            <div class="catalogContent">
+            <figure>
+              <img src="img/220*165.png" width="220" height="165" alt="Товар-6">
+            </figure>
+            <p>Dovetail</p>
+            </div>
+        </article>
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="map">
+      <section class="mapForm">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn" href="#">Напишите нам</a>
+      </section>
+    </div>
+  </main>
+<footer class="mainFooter">
+    <div class="container">
+      <section class="footerSocial">
+        <a class="socialBtn socialBtnVk" href="#">Вконтакте</a>
+        <a class="socialBtn socialBtnFb" href="#">Фейсбук</a>
+        <a class="socialBtn socialBtnInst" href="#">Инстаграм</a>
+      </section>
+      <section class="features">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
