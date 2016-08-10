@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <img class="logo" src="img/logo.png" alt="Логотип" width="150" height="60">
+      <a href="#"> <img class="logo" src="img/logo.png" alt="Логотип" width="150" height="60"></a>
       <nav class="main-navigation">
         <ul>
           <li><a href="#">Студия</a></li>
@@ -25,8 +25,8 @@
   <main class="container">
     <div class="shop-columns">
       <div class="shop-column-left">
-        <fieldset>
           <form action="/echo" method="post">
+            <fieldset>
             <h3>Стоимость:</h3>
             <div class="shop-filter">
               <div class="input-price">
@@ -34,27 +34,28 @@
                 <input class="max-price" type="text" value="15 000">
               </div>
             </div>
-            <h3>Сетка:</h3>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
             <input type="radio" name="grid" id="adaptive" checked="">
             <label for="adaptive">Адаптивная</label>
             <input type="radio" name="grid" id="fixed">
             <label for="fixed">Фиксированная</label>
             <input type="radio" name="grid" id="rubber">
             <label for="rubber">Резиновая</label>
-            <h3>Особенности:</h3>
+            <legend>Особенности:</legend>
             <input type="checkbox" name="slider" id="slider" checked="">
             <label for="slider">Слайдер</label>
             <input type="checkbox" name="blockFeatures" id="blockFeatures">
             <label for="blockFeatures">Блок преимуществ</label>
             <input type="checkbox" name="news" id="news" checked="">
             <label for="news">Новости</label>
-            <br>
             <input type="checkbox" name="gallery" id="gallery">
             <label for="gallery">Галерея</label>
-            <br>
             <input type="checkbox" name="basket" id="basket">
             <label for="basket">Корзина</label>
             <input type="submit" name="submitShow" value="Показать">
+            <button class="submitShow">Показать</button>
           </form>
         </fieldset>
       </div>
