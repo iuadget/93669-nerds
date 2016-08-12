@@ -1,0 +1,12 @@
+h1, h2, h3{
+font-weight: 500;
+}
+body{
+min-width: 900px;
+background: #fff;
+color: #283136;
+font-family: "Roboto", "Arial", sans-serif;
+font-size: 16px;
+line-height: 22px;
+font-weight: 500;
+}
