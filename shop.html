@@ -1,198 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Nerds</title>
-  <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="main-header">
-    <div class="container">
-      <a href="#"> <img class="logo" src="img/logo.png" alt="Логотип" width="150" height="60"></a>
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
-    </div>
-  </header>
-  <main class="container">
-    <div class="shop-columns">
-      <div class="shop-column-left">
-        <form action="/echo" method="post">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class="main-header-catalog">
+      <div class="container clearfix">
+        <div class="index-logo">
+          <a href="#">
+          <img class="index-logo-img" src="img/logo.png" width="139" height="56" alt="Логотип"></a>         
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>      
+        <h1 class="main-welcome">Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+    
+    <main class="container clearfix">
+           <div class="sidebar">
+        <form action="#" method="post">
           <fieldset>
-            <h3>Стоимость:</h3>
-            <div class="shop-filter">
-              <div class="input-price">
-                от
-                <input class="min-price" type="text" value="0"> до
-                <input class="max-price" type="text" value="15 000">
-              </div>
-            </div>
+            <legend class="sidebar-title">Стоимость:</legend>
+            <input type="range" name="range">
+            от 0 до 15000
           </fieldset>
           <fieldset>
-            <legend>Сетка:</legend>
-            <input type="radio" name="grid" id="adaptive" checked="">
-            <label for="adaptive">Адаптивная</label>
-            <input type="radio" name="grid" id="fixed">
-            <label for="fixed">Фиксированная</label>
-            <input type="radio" name="grid" id="rubber">
-            <label for="rubber">Резиновая</label>
-            <legend>Особенности:</legend>
-            <input type="checkbox" name="slider" id="slider" checked="">
-            <label for="slider">Слайдер</label>
-            <input type="checkbox" name="blockFeatures" id="blockFeatures">
-            <label for="blockFeatures">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="news" checked="">
-            <label for="news">Новости</label>
-            <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label>
-            <input type="checkbox" name="basket" id="basket">
-            <label for="basket">Корзина</label>
-            <input type="submit" name="submitShow" value="Показать">
-            <button class="submitShow">Показать</button>
+            <legend class="sidebar-title">Сетка:</legend>
+            <ul>
+            
+            <li><input type="radio" name="grid" value="Адаптивная" id="grid-item-1">
+            <label for="grid-item-1">Адаптивная</label></li>
+
+            
+            <li><input type="radio" name="grid" value="Фиксированная" id="grid-item-2">
+            <label for="grid-item-2">Фиксированная</label></li>
+
+            
+            <li><input type="radio" name="grid" value="Резиновая" id="grid-item-3">
+            <label for="grid-item-3">Резиновая</label></li>
+
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="sidebar-title">Особенности:</legend>
+            <ul>
+
+            <li><input type="checkbox" name="features" id="features-item-1">
+            <label for="features-item-1">Слайдер</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-2">          
+            <label for="features-item-2">Блок приемуществ</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-3">           
+            <label for="features-item-3">Новости</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-4">           
+            <label for="features-item-4">Галерея</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-5">            
+            <label for="features-item-5">Корзина</label></li>
+          </fieldset>
+          <button type="submit" class="sidebar-btn">Показать</button>
         </form>
-        </fieldset>
-      </div>
-      <div class="shop-column-right">
-        <ul>
-          <li>Сортировать:</li>
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
-          <li><a href="#">Up</a></li>
-          <li><a href="#">Down</a></li>
-        </ul>
-        <div class="catalog">
-          <article class="catalog-item">
-            <div class="change-pic">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="catalog-content">
-              <figure>
-                <img src="img/item-1.jpg" width="220" height="165" alt="Товар-1">
-              </figure>
-              <p>AVIATOR</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="change-pic">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="catalog-content">
-              <figure>
-                <img src="img/item-2.jpg" width="220" height="165" alt="Товар-2">
-              </figure>
-              <p>SUNSET</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="change-pic">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="catalog-content">
-              <figure>
-                <img src="img/item-3.jpg" width="220" height="165" alt="Товар-3">
-              </figure>
-              <p>FORTE</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="change-pic">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="catalog-content">
-              <figure>
-                <img src="img/item-4.jpg" width="220" height="165" alt="Товар-4">
-              </figure>
-              <p>Moderh organic thai</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="change-pic">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="catalog-content">
-              <figure>
-                <img src="img/item-5.jpg" width="220" height="165" alt="Товар-5">
-              </figure>
-              <p>Avenue</p>
-            </div>
-          </article>
-          <article class="catalog-item">
-            <div class="change-pic">
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="catalog-content">
-              <figure>
-                <img src="img/item-6.jpg" width="220" height="165" alt="Товар-6">
-              </figure>
-              <p>Dovetail</p>
-            </div>
-          </article>
-          <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+      </div>    
+      <div class="catalog">
+        <div class="catalog-filter">
+          <b class="catalog-filter-title">Сортировать:</b>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
           </ul>
+          <a href="#" class="filter filter-up"></a>        
+          <a href="#" class="filter filter-down"></a>
+        </div>
+        <article class="catalog-item">
+          <div class="catalog-content">
+            <img src="img/item-1.jpg" width="240" height="240" alt="">
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-content">
+            <img src="img/item-2.jpg" width="240" height="240" alt="">
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-content">
+            <img src="img/item-3.jpg" width="240" height="240" alt="">
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-content">
+            <img src="img/item-4.jpg" width="240" height="240" alt="">
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-content">
+            <img src="img/item-5.jpg" width="240" height="240" alt="">
+          </div>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-content">
+            <img src="img/item-6.jpg" width="240" height="240" alt="">
+          </div>
+        </article>
+        <div class="catalog-pagination">  
+          <a href="#" class="catalog-btn" >1</a>
+          <a href="#" class="catalog-btn" >2</a>
+          <a href="#" class="catalog-btn" >3</a>
+          <a href="#" class="catalog-btn" >Следующая</a>
         </div>
       </div>
-    </div>
-    <div class="map">
-      <section class="map-form">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург,
-          <br> ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn" href="#">Напишите нам</a>
-      </section>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="features">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </div>
-  </footer>
-</body>
-
+  
+    </main>
+    <footer class="main-footer">
+     <img class="main-footer-map" src="img/map.png" width="100%"  height="416" alt="">
+      <div class="container">
+        <div class="footer-content-left">
+          <div class="footer-content-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+        </div>
+        <div class="footer-content-right">
+          <div class="footer-content-aside">
+            <span>Давайте дружить,это выгодно</span>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

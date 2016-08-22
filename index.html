@@ -1,113 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Nerds</title>
-  <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">
-        <a href="#"><img src="img/logo.png" alt="Логотип" width="150" height="60"></a>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <title>Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="index-logo">
+          <a href="#">
+          <img class="index-logo-img" src="img/logo.png" width="139" height="56" alt="Логотип"></a>         
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
+    </header>
+    <main class="container">
       <div class="slider">
-        <div class="slides">
-          <div class="slide-content">
-            <h1>Долго, дорого, скрупулезно.</h1>
-            <p>Математически выверенный дизайн
-              <br> для вашего сайта или мобильного приложения.</p>
-            <a class="btn" href="#">Узнать больше</a>
+        <div class="slider-content clearfix">
+          <div class="slider-content-left">
+            <div class="slider-slogan">
+            Долго, дорого,<br>скрупулезно
+            </div>
+            <p>Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="more" href="#">Узнать больше</a>
+          </div>
+          <div class="slider-content-right">
+          
           </div>
         </div>
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
       </div>
-    </div>
-  </header>
-  <main class="main-container">
-    <div class="features">
-      <article class="features-item">
-        <img src="img/features-item-1.png" alt="Рисунок-1" width="240" height="124">
-        <h2>Веб-сайты</h2>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a class="btn" href="#">Заказать</a>
-      </article>
-      <article class="features-item">
-        <img src="img/features-item-2.png" alt="Рисунок-2" width="240" height="124">
-        <h2>Приложения</h2>
-        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a class="btn" href="#">Заказать</a>
-      </article>
-      <article class="features-item">
-        <img src="img/features-item-3.png" alt="Рисунок-3" width="240" height="124">
-        <h2>Презентации</h2>
-        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a class="btn" href="#">Заказать</a>
-      </article>
-    </div>
-    <div class="description">
-      <section class="column-left">
-        <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section class="column-right">
-        <div class="logo-block">
-          <img src="img/logo-2.png" alt="Логотип" width="240" height="119">
+      <section class="features clearfix">
+        <div class="features-item">
+          <div class="features-image">
+            <img src="img/features-item-1.jpg" width="240" height="124" alt="">
+          </div>
+          <h2 class="features-name">Веб-сайты</h2>
+          <p class="features-desc">Мир никогда не будет прежним<br>
+            после того как вы увидите наш сайт!
+          </p>
+          <a class="features-anchor type-1" href="#">Заказать</a>
         </div>
-        <h3 class="work-time">Как мы работаем:</h3>
-        <ul>
-          <li>С самоотдачей 146%</li>
-          <li>Соблюдая сроки на 100%</li>
-          <li>По предоплате 50%</li>
-        </ul>
+        <div class="features-item">
+          <div class="features-image">
+            <img src="img/features-item-2.jpg" width="240" height="124" alt="">
+          </div>
+          <h2 class="features-name">Приложения</h2>
+          <p class="features-desc">Покорите топ-10 приложений<br>
+            в AppStore и Google Play
+          </p>
+          <a class="features-anchor features-anchor-2" href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <div class="features-image">
+            <img src="img/features-item-3.jpg" width="240" height="124" alt="">
+          </div>
+          <h2 class="features-name">Презентации</h2>
+          <p class="features-desc">Вы даже не подозреваете<br>
+            насколько вы изумительны
+          </p>
+          <a class="features-anchor btn-2" href="#">Заказать</a>
+        </div>
       </section>
-    </div>
-    <div class="partners-block">
-      <a class="partner" href="#"><img src="img/partner-1.png" alt="Glukhanko" width="198" height="37"></a>
-      <a class="partner" href="#"><img src="img/partner-2.png" alt="HtmlAcademy" width="199" height="68"></a>
-      <a class="partner" href="#"><img src="img/partner-3.png" alt="Barbershop" width="209" height="86"></a>
-    </div>
-    <div class="map">
-      <section class="map-form">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn" href="#">Напишите нам</a>
+      <section class="about-company clearfix">
+        <div class="about-company-content">
+          <div class="about-company-content-left">
+          <div class="about-container-left">
+            <div class="about-company-slogan">Мы-мальнькая,но гордая<br>
+            дизайн-студия из Краснодара.
+            </div>
+            <p class="about-company-desc">Исповедуем принципы минимализма и чистоты.Ставим математический<br>
+              расчет выше креатива.Работаем не покладая рук,как роботы.
+            </p>
+            </div>
+            <div class="aside-content-left">
+            <h2 class="aside-content-title">Выполняем заказы на разработку:</h2>
+            <ul class="aside-menu">
+              <li>Веб сайтов любой сложности</li>
+              <li>Мобильных приложений для IOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презинтаций</li>
+            </ul>
+          </div>
+          </div>
+          <div class="about-company-content-right">
+          <div class="about-container-right">
+            <div class="about-company-logo">
+              <img src="img/logo-2.png" width="240" height="119" alt="">
+            </div>
+            </div>
+              <div class="aside-content-right">
+            <h2 class="aside-content-title">Как мы работаем:</h2>
+            <ul class="aside-menu">
+              <li>С самоотдачей 146%</li>
+              <li>Соблюдая сроки на 100%</li>
+              <li>По предоплате 50%</li>
+            </ul>
+          </div>
+          </div>
+        </div>               
+        </div>
       </section>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </section>
-      <section class="features">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </div>
-  </footer>
-</body>
-
+      <div class="gallery ">          
+            <a href="#"><img src="img/partner-1.png" width="198" height="37" alt=""></a>         
+            <a href="#"><img src="img/partner-2.png" width="199" height="68" alt=""></a>          
+            <a href="#"><img src="img/partner-3.png" width="209" height="90" alt=""></a>                  
+      </div>     
+    </main>
+    <footer class="main-footer clearfix">
+     <img class="main-footer-map" src="img/map.png" width="100%"  height="416" alt="">
+      <div class="container">     
+        <div class="footer-content-left">
+          <div class="footer-content-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+        </div>
+        <div class="footer-content-right">
+          <div class="footer-content-aside">
+            <span class="footer-slogan">Давайте дружить,это выгодно</span>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
