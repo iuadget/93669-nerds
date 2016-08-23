@@ -1,92 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <title>Каталог</title>
-  </head>
-  <body>
-    <header class="main-header-catalog">
-      <div class="container clearfix">
-        <div class="index-logo">
-          <a href="#">
-          <img class="index-logo-img" src="img/logo.png" width="139" height="56" alt="Логотип"></a>         
-        </div>
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="basket" href="#">Корзина</a>
-        </div>      
-        <h1 class="main-welcome">Добро пожаловать в магазин готовых макетов</h1>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <header class="main-header-catalog">
+    <div class="container clearfix">
+      <div class="index-logo">
+        <a href="#">
+          <img class="index-logo-img" src="img/logo.png" width="139" height="56" alt="Логотип"></a>
       </div>
-    </header>
-    
-    <main class="container clearfix">
-           <div class="sidebar">
-        <form action="#" method="post">
-          <fieldset>
-            <legend class="sidebar-title">Стоимость:</legend>
-            <input type="range" name="range">
-            от 0 до 15000
-          </fieldset>
-          <fieldset>
-            <legend class="sidebar-title">Сетка:</legend>
-            <ul>
-            
-            <li><input type="radio" name="grid" value="Адаптивная" id="grid-item-1">
-            <label for="grid-item-1">Адаптивная</label></li>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="basket" href="#">Корзина</a>
+      </div>
+      <h1 class="main-welcome">Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </header>
 
-            
-            <li><input type="radio" name="grid" value="Фиксированная" id="grid-item-2">
-            <label for="grid-item-2">Фиксированная</label></li>
-
-            
-            <li><input type="radio" name="grid" value="Резиновая" id="grid-item-3">
-            <label for="grid-item-3">Резиновая</label></li>
-
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend class="sidebar-title">Особенности:</legend>
-            <ul>
-
-            <li><input type="checkbox" name="features" id="features-item-1">
-            <label for="features-item-1">Слайдер</label></li>
-
-            <li><input type="checkbox" name="features" id="features-item-2">          
-            <label for="features-item-2">Блок приемуществ</label></li>
-
-            <li><input type="checkbox" name="features" id="features-item-3">           
-            <label for="features-item-3">Новости</label></li>
-
-            <li><input type="checkbox" name="features" id="features-item-4">           
-            <label for="features-item-4">Галерея</label></li>
-
-            <li><input type="checkbox" name="features" id="features-item-5">            
-            <label for="features-item-5">Корзина</label></li>
-          </fieldset>
-          <button type="submit" class="sidebar-btn">Показать</button>
-        </form>
-      </div>    
-      <div class="catalog">
-        <div class="catalog-filter">
-          <b class="catalog-filter-title">Сортировать:</b>
+  <main class="container clearfix">
+    <div class="sidebar">
+      <form action="#" method="post">
+        <fieldset>
+          <legend class="sidebar-title">Стоимость:</legend>
+          <input type="range" name="range"> от 0 до 15000
+        </fieldset>
+        <fieldset>
+          <legend class="sidebar-title">Сетка:</legend>
           <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
+
+            <li>
+              <input type="radio" name="grid" value="Адаптивная" id="grid-item-1">
+              <label for="grid-item-1">Адаптивная</label>
+            </li>
+
+
+            <li>
+              <input type="radio" name="grid" value="Фиксированная" id="grid-item-2">
+              <label for="grid-item-2">Фиксированная</label>
+            </li>
+
+
+            <li>
+              <input type="radio" name="grid" value="Резиновая" id="grid-item-3">
+              <label for="grid-item-3">Резиновая</label>
+            </li>
+
           </ul>
-          <a href="#" class="filter filter-up"></a>        
-          <a href="#" class="filter filter-down"></a>
-        </div>
+        </fieldset>
+        <fieldset>
+          <legend class="sidebar-title">Особенности:</legend>
+          <ul>
+
+            <li>
+              <input type="checkbox" name="features" id="features-item-1">
+              <label for="features-item-1">Слайдер</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="features" id="features-item-2">
+              <label for="features-item-2">Блок приемуществ</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="features" id="features-item-3">
+              <label for="features-item-3">Новости</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="features" id="features-item-4">
+              <label for="features-item-4">Галерея</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="features" id="features-item-5">
+              <label for="features-item-5">Корзина</label>
+            </li>
+        </fieldset>
+        <button type="submit" class="sidebar-btn">Показать</button>
+      </form>
+    </div>
+    <div class="catalog">
+      <div class="catalog-filter">
+        <b class="catalog-filter-title">Сортировать:</b>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
+        </ul>
+        <a href="#" class="filter filter-up"></a>
+        <a href="#" class="filter filter-down"></a>
+      </div>
+      <div class="catalog-list">
         <article class="catalog-item">
           <div class="catalog-content">
             <img src="img/item-1.jpg" width="240" height="240" alt="">
@@ -117,32 +135,40 @@
             <img src="img/item-6.jpg" width="240" height="240" alt="">
           </div>
         </article>
-        <div class="catalog-pagination">  
-          <a href="#" class="catalog-btn" >1</a>
-          <a href="#" class="catalog-btn" >2</a>
-          <a href="#" class="catalog-btn" >3</a>
-          <a href="#" class="catalog-btn" >Следующая</a>
+      </div>
+      <div class="catalog-pagination">
+        <a href="#" class="catalog-btn">1</a>
+        <a href="#" class="catalog-btn">2</a>
+        <a href="#" class="catalog-btn">3</a>
+        <a href="#" class="catalog-btn">Следующая</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="main-footer">
+
+    <div class="container">
+
+      <div class="main-footer-map">
+        <img src="img/map.png" width="100%" height="100%" alt="">
+      </div>
+
+      <div class="footer-content-left">
+        <div class="footer-content-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
       </div>
-  
-    </main>
-    <footer class="main-footer">
-     <img class="main-footer-map" src="img/map.png" width="100%"  height="416" alt="">
-      <div class="container">
-        <div class="footer-content-left">
-          <div class="footer-content-social">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </div>
-        </div>
-        <div class="footer-content-right">
-          <div class="footer-content-aside">
-            <span>Давайте дружить,это выгодно</span>
-            <p>Скидка 10% для друзей из социальных сетей</p>
-          </div>
+      <div class="footer-content-right">
+        <div class="footer-content-aside">
+          <span>Давайте дружить,это выгодно</span>
+          <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
