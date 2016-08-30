@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <script src="js/script.js"></script>
   <title>Каталог</title>
 </head>
 
@@ -133,7 +134,7 @@
                 <h2>AVIATOR</h2>
                 <p>Одностраничный макет
                   <br>с авторским дизайном</p>
-                <a href="#">8000 р</a>
+                <a href="#" class="item-price btn">8000 р</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -146,7 +147,7 @@
                 <h2>SUNSET</h2>
                 <p>Интернет-магазин
                   <br>с личным кабинетом</p>
-                <a href="#">10000 р</a>
+                <a href="#" class="item-price btn">10000 р</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -159,7 +160,7 @@
                 <h2>FORTE</h2>
                 <p>Отличный макет
                   <br>для личного блога</p>
-                <a href="#">5000 р</a>
+                <a href="#" class="item-price btn">5000 р</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -172,7 +173,7 @@
                 <h2>MODERN</h2>
                 <p>Сайт для ресторана
                   <br>быстрого питания</p>
-                <a href="#">12000 р</a>
+                <a href="#" class="item-price btn">12000 р</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -185,7 +186,7 @@
                 <h2>AVENUE</h2>
                 <p>Макет для блога
                   <br>о путешествиях</p>
-                <a href="#">8000 р</a>
+                <a href="#" class="item-price btn">8000 р</a>
               </div>
             </article>
             <article class="catalog-item">
@@ -198,7 +199,7 @@
                 <h2>DOVETAIL</h2>
                 <p>Интернет магазин
                   <br>с галереей товаров</p>
-                <a href="#">8000 р</a>
+                <a href="#" class="item-price btn">8000 р</a>
               </div>
             </article>
 
@@ -224,18 +225,33 @@
 
     <div class="container">
 
-      <div class="main-footer-map">
-        <img src="img/map.png" width="100%" height="100%" alt="">
-      </div>
 
-      <div class="contacts-adress">
-        <h2 class="contacts-adress-title">NERDS Design Studio</h2>
-        <div class="contacts-adress-item"> 191186, Санкт-Петербург ул.Б.Коннюшенная, д.19/8
-        </div>
-        <div class="contacts-adress-item">
-          тел.+7(812)275-75-75
-        </div>
-        <a href="#" class="contacts-adress-btn">Напишите нам</a>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.320894615736744!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460382549820"
+            width="900" height="410" style="border:0" allowfullscreen></iframe>
+        <section class="map-form">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург,
+            <br> ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn btn-pop-up" href="#">Напишите нам</a>
+        </section>
+      </div>
+      <div class="pop-up">
+        <button class="pop-up-close btn" type="button"></button>
+        <form>
+          <div class="form-column">
+            <label for="name-id">Ваше имя:</label>
+            <input type="text" name="name" id="name-id" placeholder="Представьтесь, пожалуйста" required>
+          </div>
+          <div class="form-column">
+            <label for="email-id">Ваш e-mail:</label>
+            <input type="text" name="email" id="email-id" placeholder="Для отправки ответа" required>
+          </div>
+          <label for="text-letter-id">Текст письма:</label>
+          <textarea name="text-letter" id="text-letter-id" placeholder="В свободной форме"></textarea>
+          <button class="btn" type="submit" name="send">Отправить</button>
+        </form>
       </div>
 
       <div class="container clearfix">
