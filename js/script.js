@@ -1,7 +1,7 @@
 var popBtn = document.querySelector(".btn-pop-up");
 var popUp = document.querySelector(".pop-up");
 var popClose = document.querySelector(".pop-up-close");
-var login = popUp.querySelector("[name=name");
+var login = document.querySelector("#name-id");
 
 popBtn.addEventListener("click", function(event) {
   event.preventDefault();

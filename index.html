@@ -4,26 +4,33 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">  
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <script src="js/script.js"></script>
   <title>Нёрдс</title>
 </head>
 
 <body>
 
   <header class="main-header">
+   
     <div class="container">
-      <img class="logo" src="img/logo.png" alt="Логотип" width="139" height="56">
+     
+      <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="Логотип" width="139" height="56">
+      </a>
       <nav class="main-navigation">
         <ul>
           <li class="active"><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="shop.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          <li class="cart"><a href="#"><i></i>Корзина</a></li>
         </ul>
       </nav>
+        
+        <div class="user-block">
+          <a class="basket icon-basket" href="#">Корзина</a>
+        </div>
+        
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -101,9 +108,11 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </section>
+      
       <section class="column-right">
         <div class="logo-block">
-          <img src="img/logo-2.png" alt="Логотип" width="240" height="119">
+          <img src="img/logo-2.jpg" alt="Логотип" width="187" height="75" alt="Лого Нёрдс">
+          <div class="about-company-since">SINCE 2004</div>
         </div>
         <h3>Как мы работаем:</h3>
         <ul class="list">
@@ -167,6 +176,7 @@
       </div>
     </div>
   </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
