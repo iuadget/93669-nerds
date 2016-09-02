@@ -12,86 +12,92 @@
 <body class="shop-page">
 
   <header class="main-header">
-    <div class="container">
-           <a href="index.html">
-        <img class="logo" src="img/logo.png" alt="Логотип" width="139" height="56">
-      </a>
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li class="active"><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-        
-        <div class="user-block">
-          <a class="basket icon-basket" href="#"><i></i>Корзина</a>
+   
+    <div class="container clearfix">
+        <div class="index-logo">
+          <a>
+          <img class="index-logo-img" src="img/logo.png" width="139" height="56" alt="Логотип"></a>         
         </div>
-        
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="active" href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="basket icon-basket" href="#">Корзина</a>
+        </div>
+      </div>  
+       
       <h1>Добро пожаловать в магазин готовых макетов</h1>
-    </div>
   </header>
 
   <main class="container">
+   
     <div class="container">
+     
       <div class="shop-columns clearfix">
+       
         <div class="shop-column-left">
-          <div class="sidebar">
-            <form>           
-              <fieldset>
-                <label class="sidebar-title">Стоимость:</label>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar" style="margin-left: 20%; width: 30%"></div>
-                    </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
-                  </div>
-                  <div class="price-controls">
-                    <label class="min-price">от
-                      <input name="min-price" type="text" value="0">
-                    </label>
-                    <label class="max-price">до
-                      <input name="max-price" type="text" value="15000">
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend class="sidebar-title">Сетка:</legend>
-                    <label for="grid-item-1">
-                    Адаптивная <input class="Grid-adaptiv" type="radio" name="grid" value="Адаптивная" id="grid-item-1">
-                    </label>
-                    <label for="grid-item-2">
-                    Фиксированная<input class="Gris-fix" type="radio" name="grid" value="Фиксированная" id="grid-item-2">
-                    </label>
-                    <label for="grid-item-3">
-                    Резиновая<input class="Grid-flex" type="radio" name="grid" value="Резиновая" id="grid-item-3">
-                    </label>
-              </fieldset>
-              <fieldset>
-                <legend class="sidebar-title">Особенности:</legend>
-                    <label for="features-item-1">
-                    Слайдер<input class="Features-slide" type="checkbox" name="features" id="features-item-1">
-                    </label>
-                    <label for="features-item-2">
-                    Блок приемуществ<input class="Features-block-features" type="checkbox" name="features" id="features-item-2">
-                    </label>
-                    <label for="features-item-3">
-                    Новости<input class="neatures-News" type="checkbox" name="features" id="features-item-3">
-                    </label>
-                    <label for="features-item-4">
-                    Галерея<input class="Features-gallery" type="checkbox" name="features" id="features-item-4">
-                    </label>
-                    <label for="features-item-5">
-                    Корзина<input class="Features-basket" type="checkbox" name="features" id="features-item-5">
-                    </label>
-              </fieldset>
-              <button type="submit" class="sidebar-btn">Показать</button>
-            </form>          
+         
+      <div class="sidebar">
+        <form>
+        <fieldset>
+        <label class="sidebar-title">Стоимость:</label>
+    <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
         </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+      </div>
+      </fieldset>
+          <fieldset>
+            <legend class="sidebar-title">Сетка:</legend>
+            <ul>            
+            <li><input type="radio" name="grid" value="Адаптивная" id="grid-item-1">
+            <label for="grid-item-1">Адаптивная</label></li>
+            
+            <li><input type="radio" name="grid" value="Фиксированная" id="grid-item-2">
+            <label for="grid-item-2">Фиксированная</label></li>
+            
+            <li><input type="radio" name="grid" value="Резиновая" id="grid-item-3">
+            <label for="grid-item-3">Резиновая</label></li>
+
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="sidebar-title">Особенности:</legend>
+            <ul>
+            <li><input type="checkbox" name="features" id="features-item-1">
+            <label for="features-item-1">Слайдер</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-2">          
+            <label for="features-item-2">Блок приемуществ</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-3">           
+            <label for="features-item-3">Новости</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-4">           
+            <label for="features-item-4">Галерея</label></li>
+
+            <li><input type="checkbox" name="features" id="features-item-5">            
+            <label for="features-item-5">Корзина</label></li>
+            </ul>     
+
+          </fieldset>
+           <button type="submit" class="sidebar-btn">Показать</button>
+          </form>          
+      </div>      
+        
         <div class="shop-column-right">
           <ul class="list-sorting">
             <li>Сортировать:</li>
@@ -192,8 +198,10 @@
               <li><a class="next" href="#">Следующая</a></li>
             </ul>
           </div>
+          
         </div>
       </div>
+      
     </div>
   </main>
   <footer class="main-footer clearfix">
