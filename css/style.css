@@ -103,8 +103,8 @@ body {
 
 .container-menu {
 	width: 880px;
-	padding: 0 10px;	
-	margin: 0 auto;	
+	padding: 0 10px;
+	margin: 0 auto;
 }
 
 .main-navigation {
@@ -155,7 +155,7 @@ body {
 	float: right;
 	min-height: 135px;
 	max-width: 100px;
-	
+
 }
 .basket {
 	display: inline-block;
@@ -190,15 +190,15 @@ body {
 
 .container {
 	width: 880px;
-	padding: 0 10px;	
-	margin: 0 auto;	
+	padding: 0 10px;
+	margin: 0 auto;
 }
 .index-logo {
 	position: relative;
 	float: left;
 	min-height: 135px;
 	width: 150px;
-	
+
 }
 .index-logo-img {
 	position: absolute;
@@ -207,15 +207,15 @@ body {
 .main-navigation {
 	float: left;
 	margin-left: 160px;
-	min-height: 135px;	
+	min-height: 135px;
 	width: 470px;
-	
+
 }
 .main-navigation .active {
 	border-bottom: 2px solid #fb565a;
 }
 .main-navigation a {
-	display: block;	
+	display: block;
 	color:#3f3f3f;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -421,7 +421,7 @@ body {
 	position:absolute;
 	 outline: 1px solid #eeeeee;
 	 top:50%;
-	 width: 70px;	
+	 width: 70px;
 	 left: 0;
 }
 .about-company-since:after {
@@ -429,7 +429,7 @@ body {
 	position:absolute;
 	 outline: 1px solid #eeeeee;
 	 top:50%;
-	 width: 70px;	
+	 width: 70px;
 	 right: 0;
 }
 
@@ -701,14 +701,14 @@ input[type="radio"]+label::before {
 	display: block;
 	font-size: 28px;
 	font-weight: 200;
-	font-family: "symbols-nerds";	
+	font-family: "symbols-nerds";
 	position: absolute;
 	top: 0;
 	left: 0;
 	color: #b5b5b5;
 }
 input[type="radio"]:checked + label::before {
-	 content: "\25cf"; 
+	 content: "\25cf";
 }
 
 
@@ -722,14 +722,14 @@ input[type="checkbox"] + label {
 	padding-left: 30px;
 	position: relative;
 	cursor: pointer;
-	
+
 }
 input[type="checkbox"] + label::before {
 	content: "\2610";
 	display: block;
 	font-size: 28px;
 	font-weight:200;
-	font-family: "symbols-nerds";	
+	font-family: "symbols-nerds";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -743,7 +743,7 @@ input[type="checkbox"]:checked + label::before {
 	margin-top:20px;
   width: 240px;
   min-height: 150px;
-  
+
 }
 
 .range-controls {
@@ -934,12 +934,12 @@ input[type="checkbox"]:checked + label::before {
 /*  display: none;*/
   width: 200px;
   height: 200px;
-  text-align: center;   
+  text-align: center;
   opacity: 0;
-  transition: .2s ease-in-out;   
-  position: absolute; 
-  top: 15px; 
-  left: 50%; 
+  transition: .2s ease-in-out;
+  position: absolute;
+  top: 15px;
+  left: 50%;
   margin-left: -100px;
   padding: 30px 30px;
   background: #fff;
