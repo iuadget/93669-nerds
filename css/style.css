@@ -98,7 +98,12 @@ body {
   float: left;
   width: 139px;
   height: 56px;
+/* 
+    
   margin-bottom: 73px;
+  margin: 0;
+  margin-right: 161px;
+*/
 }
 
 .container-menu {
@@ -109,11 +114,19 @@ body {
 
 .main-navigation {
   float: right;
-  width: 560px;
+
+  width: 60px;
   margin-top: 26px;
+
 }
 .main-navigation ul {
   font-size: 0;
+    
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    
 }
 .main-navigation li {
   display: inline-block;
@@ -144,7 +157,8 @@ body {
 .basket:focus,
 .basket:hover
 {
-	color:#f4a7a9;
+    opacity: 1;
+    color: #fb565a;
 	cursor: pointer;
 }
 
@@ -153,23 +167,29 @@ body {
 }
 .user-block {
 	float: right;
+/*
 	min-height: 135px;
 	max-width: 100px;
-
+*/
+    width: 95px;
+    padding-top: 0px;
+    
 }
 .basket {
+
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: top; 
 	padding: 5px 0px;
 	padding-left: 10px;
-	margin-top: 21px;
+	margin-top: 21px; 
 	margin-left: 0;
 	font-size: 14px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color:#3f3f3f;
-	text-decoration: none;
+	text-decoration: none; 
 	position: relative;
+
 
 }
 
@@ -227,6 +247,9 @@ body {
   position: relative;
   height: 280px;
 }
+
+
+
 .slider .slider-paginator {
   position: absolute;
   left: 50%;
