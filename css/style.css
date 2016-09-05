@@ -57,7 +57,7 @@ body {
 .container {
   width: 880px;
   margin: 0 auto;
-  padding: 0 10px;
+/*  padding: 0 10px;*/
 }
 .clearfix::after {
   content: "";
@@ -113,10 +113,15 @@ body {
 }
 
 .main-navigation {
+/*
   float: right;
 
   width: 60px;
-  margin-top: 26px;
+*/
+float: left;
+    margin-left: 170px;
+    width: 450px;
+    margin-top: 26px;
 
 }
 .main-navigation ul {
@@ -130,8 +135,8 @@ body {
 }
 .main-navigation li {
   display: inline-block;
-  vertical-align: top;
-  margin-right: 46px;
+/*  vertical-align: top;*/
+  margin-right: 44px;
 }
 .main-navigation a {
   display: block;
@@ -178,17 +183,17 @@ body {
 .basket {
 
 	display: inline-block;
-	vertical-align: top; 
-	padding: 5px 0px;
+/*	vertical-align: top; */
+	padding: 4px 0px;
 	padding-left: 10px;
 	margin-top: 21px; 
-	margin-left: 0;
+/*	margin-left: 0;*/
 	font-size: 14px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color:#3f3f3f;
 	text-decoration: none; 
-	position: relative;
+/*	position: relative;*/
 
 
 }
@@ -208,13 +213,15 @@ body {
 
 
 
+/*
 .container {
 	width: 880px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
+*/
 .index-logo {
-	position: relative;
+/*	position: relative;*/
 	float: left;
 	min-height: 135px;
 	width: 150px;
@@ -225,10 +232,12 @@ body {
 	top:27px;
 }
 .main-navigation {
+/*
 	float: left;
 	margin-left: 160px;
 	min-height: 135px;
 	width: 470px;
+*/
 
 }
 .main-navigation .active {
@@ -245,7 +254,7 @@ body {
 .main-header .slider {
   clear: both;
   position: relative;
-  height: 280px;
+  height: 273px;
 }
 
 
