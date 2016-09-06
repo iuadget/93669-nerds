@@ -479,22 +479,53 @@ body {
   font-size: 0;
 }
 
-.partners-block .partner {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 105px;
-  padding-left: 14px;
-  font-size: 16px;
-  opacity: 0.2;
+.partner-block {
+  font-size: 0;
+  margin-top: 44px;
+  margin-bottom: 85px;
+  border-bottom: 2px solid #eee;
 }
 
-.partners-block .partner:last-child {
+.partner-item {
+  display: inline-block;
+  width: 220px;
+  height: 96px;
+  margin-right: 97px;
+  margin-left: 2px;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.partner-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.partners-block .partner:hover {
-  opacity: 1.0;
+.partner-item:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
 }
+
+.partner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.partner-btn {
+  opacity: .3;
+}
+
+.partner-btn:hover {
+  opacity: 1;
+}
+
+.partner-btn:active {
+  opacity: 1;
+}
+
+
+/**/
 
 .about-company-since {
   margin: 0;
