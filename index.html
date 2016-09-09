@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>Нёрдс</title>
 </head>
 
@@ -66,27 +66,27 @@
   <main>
     <section class="features clearfix container">
       <div class="features-item">
-        <div class="features-image">
+
           <img src="img/features-item-1.jpg" width="240" height="124" alt="Лого раздела приемущества">
-        </div>
+
         <h2 class="features-name">Веб-сайты</h2>
         <p class="features-desc">Мир никогда не будет прежним после того как увидит ваш сайт !
         </p>
         <a class="features-anchor anchor-1" href="#">Заказать</a>
       </div>
       <div class="features-item">
-        <div class="features-image">
+
           <img src="img/features-item-2.jpg" width="240" height="124" alt="Лого раздела приемущества">
-        </div>
+
         <h2 class="features-name">Приложения</h2>
         <p class="features-desc">Покорите топ-10 приложений<br> в AppStrore и Google Play
         </p>
         <a class="features-anchor anchor-2" href="#">Заказать</a>
       </div>
       <div class="features-item">
-        <div class="features-image">
+
           <img src="img/features-item-3.jpg" width="240" height="124" alt="Лого раздела приемущества">
-        </div>
+
         <h2 class="features-name">Презентации</h2>
         <p class="features-desc">Вы даже не подозреваете<br> насколько вы изумительны!
         </p>
@@ -130,40 +130,49 @@
       </div>
     </section>
 
-    <section class="gallery container ">
-      <ul>
-        <li>
-          <a href="#"><img class="gallery-item-1" src="img/partner-1.png" width="198" height="37" alt="Лого Партнерская сеть"></a>
-        </li>
-        <li>
-          <a href="#"><img class="gallery-item-2" src="img/partner-2.png" width="199" height="68" alt="Лого Партнерская сеть"></a>
-        </li>
-        <li>
-          <a href="#"><img class="gallery-item-3" src="img/partner-3.png" width="209" height="86" alt="Лого Партнерская сеть"></a>
-        </li>
+<section class="container">
+   <div class="brends">
+      <div class="brends-item">
+        <div class="brends-inner">
+          <a href="#" class="brends-btn">
+            <img class="gallery-item-1" src="img/partner-1.png" width="198" height="37" alt="Лого Партнерская сеть"/>
+          </a>
+        </div>
+      </div>
+      <div class="brends-item">
+        <div class="brends-inner">
+          <a href="#" class="brends-btn">
+            <img class="gallery-item-2" src="img/partner-2.png" width="199" height="68" alt="Лого Партнерская сеть"/>
+          </a>
+        </div>
+      </div>
 
-      </ul>
-    </section>
+      <div class="brends-item">
+        <div class="brends-inner">
+          <a href="#" class="brends-btn">
+            <img class="gallery-item-3" src="img/partner-3.png" width="209" height="86" alt="Лого Партнерская сеть"/>
+          </a>
+        </div>
+      </div>
+          </div>
+       </section>
 
-  </main>
+ </main>
 
   <footer class="main-footer clearfix">
     <div class="container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.32089461570254!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2s!4v1472509188440"
           width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-      <div class="contacts-adress">
-
-        <h2 class="contacts-adress-title">NERDS Design Studio</h2>
-        <div class="contacts-adress-item"> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </div>
-        <div class="contacts-adress-phone">
-          тел. +7 (812) 275-75-75
-        </div>
-        <a href="#" class="contacts-adress-btn">Напишите нам</a>
+    <div class="maps-position container">
+      <div class="address">
+        <h4 class="address-name">NЁRDS DESIGN STUDIO</h4>
+        <p class="address-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="address-telephone">тел. +7 (812) 275-75-75</p>
+        <a href="#" class="address-write">НАПИШИТЕ НАМ</a>
       </div>
-
-      <div class="container">
+    </div>
+     
         <div class="footer-content-left">
           <div class="footer-content-social">
             <a class="social-btn social-btn-vk" href="#">VK</a>
@@ -177,23 +186,25 @@
             <p>Скидка 10% для друзей из социальных сетей</p>
           </div>
         </div>
-      </div>
+      
     </div>
   </footer>
-  <div class="modal-content clearfix">
-    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <form class="user-form" action="form.php" method="get">
-      <div class="modal-content-left-rows">
-        <label for="user-name">Ваше имя:</label>
-        <input type="text" name="user-name" id="user-name" placeholder="Представтесь пожалуйста">
-      </div>
-      <div class="modal-content-right-rows">
-        <label for="user-mail">Ваш e-mail:</label>
-        <input type="text" name="user-mail" id="user-mail" placeholder="Для отправки ответа">
-      </div>
-      <label for="user-comment">Текст письма</label>
-      <textarea name="user-comment" id="user-comment" cols="74" rows="10" placeholder="В свободной форме"></textarea>
-      <button class="btn" type="submit">Отправить</button>
+    
+  <div class="popup">
+    <form action="#" method="post" class="popup-writer">
+      <button type="reset" class="close-popup"></button>
+      <label class="popup-name">Ваше имя:
+        <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label class="popup-email">
+        Ваш e-mail:
+        <input type="text" name="user-email" id="user-email" placeholder="Для отправки ответа">
+      </label>
+      <label class="popup-letter">
+        Текст письма:
+        <textarea rows="3" placeholder="В свободной форме"></textarea>
+      </label>
+      <button type="submit" value="ОТПРАВИТЬ" class="popup-btn">ОТПРАВИТЬ</button>
     </form>
   </div>
   <script src="js/script.min.js"></script>
